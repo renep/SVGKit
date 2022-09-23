@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3242C36E217CF0CD0013765F /* Blocky.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3242C368217CF0CD0013765F /* Blocky.ttf */; };
-		32AF7BBE217389FD00142396 /* SVGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529DADF11C415FF00069B076 /* SVGKit.framework */; };
-		32AF7BC021738A0300142396 /* SVGKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 529DADF11C415FF00069B076 /* SVGKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		32D3D5EC2176E3FA00ED20D8 /* Mozilla_Firefox_logo_2013.svg in Resources */ = {isa = PBXBuildFile; fileRef = 32D3D5E62176E3FA00ED20D8 /* Mozilla_Firefox_logo_2013.svg */; };
 		32D3D5F12176FA0700ED20D8 /* Mozilla_Firefox_logo_2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3D5F02176FA0700ED20D8 /* Mozilla_Firefox_logo_2013.png */; };
 		32D42245217AED3900CFD064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D42244217AED3900CFD064 /* LaunchScreen.storyboard */; };
@@ -154,6 +152,8 @@
 		66F33DCD182FDE50004464AC /* map-alaska-onlysimple.svg in Resources */ = {isa = PBXBuildFile; fileRef = 66F33DCC182FDE50004464AC /* map-alaska-onlysimple.svg */; };
 		8805045B1AA624F20089554C /* radial-gradient-opacity.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8805045A1AA624F20089554C /* radial-gradient-opacity.svg */; };
 		9ED79A21179D83580048AA5B /* radialGradientTest.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9ED79A20179D83580048AA5B /* radialGradientTest.svg */; };
+		A784B12928DE009C00D7EFE6 /* SVGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529DADF11C415FF00069B076 /* SVGKit.framework */; };
+		A784B12A28DE009C00D7EFE6 /* SVGKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 529DADF11C415FF00069B076 /* SVGKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BD15857C199909B800461AA5 /* Coins.svg in Resources */ = {isa = PBXBuildFile; fileRef = BD15857B199909B800461AA5 /* Coins.svg */; };
 		BD54E3DB1AB7A13A001039C0 /* parent-clip.svg in Resources */ = {isa = PBXBuildFile; fileRef = BD54E3DA1AB7A13A001039C0 /* parent-clip.svg */; };
 		BDC40146199AA41900DFEA27 /* ImageAspectRatio.svg in Resources */ = {isa = PBXBuildFile; fileRef = BDC40145199AA41900DFEA27 /* ImageAspectRatio.svg */; };
@@ -173,13 +173,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 321EAA622171EC8700640504;
 			remoteInfo = "SVGKitFramework-OSX";
-		};
-		32AF7BC121738A0300142396 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6649E1021617574600AFE92A /* SVGKit-iOS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 825CDAAE1BDA4BC0003C1C12;
-			remoteInfo = "SVGKitFramework-iOS";
 		};
 		32FBF095218757490043050B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -226,13 +219,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FA5DF7281C434D55005CF231 /* Embed Frameworks */ = {
+		A784B12B28DE009C00D7EFE6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				32AF7BC021738A0300142396 /* SVGKit.framework in Embed Frameworks */,
+				A784B12A28DE009C00D7EFE6 /* SVGKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,12 +406,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32AF7BBE217389FD00142396 /* SVGKit.framework in Frameworks */,
 				6661A77D1698BBE20061E349 /* CoreText.framework in Frameworks */,
 				6649E10F1617578500AFE92A /* libxml2.dylib in Frameworks */,
 				6649E0AD1617479200AFE92A /* QuartzCore.framework in Frameworks */,
 				661A0DCF161727CF008D5FBE /* UIKit.framework in Frameworks */,
 				661A0DD1161727CF008D5FBE /* Foundation.framework in Frameworks */,
+				A784B12928DE009C00D7EFE6 /* SVGKit.framework in Frameworks */,
 				661A0DD3161727CF008D5FBE /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -711,12 +704,11 @@
 				661A0DC6161727CF008D5FBE /* Sources */,
 				661A0DC7161727CF008D5FBE /* Frameworks */,
 				661A0DC8161727CF008D5FBE /* Resources */,
-				FA5DF7281C434D55005CF231 /* Embed Frameworks */,
+				A784B12B28DE009C00D7EFE6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				32AF7BC221738A0300142396 /* PBXTargetDependency */,
 			);
 			name = "Demo-iOS";
 			productName = iOSDemo;
@@ -977,14 +969,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		32AF7BC221738A0300142396 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SVGKitFramework-iOS";
-			targetProxy = 32AF7BC121738A0300142396 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		66E8625E1688BA0B0059C9C4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -1032,6 +1016,7 @@
 		661A0DF2161727D0008D5FBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1068,7 +1053,6 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1084,6 +1068,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
 			};
@@ -1092,6 +1077,7 @@
 		661A0DF3161727D0008D5FBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1119,7 +1105,6 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1133,6 +1118,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALIDATE_WORKSPACE = YES;
