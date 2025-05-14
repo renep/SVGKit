@@ -177,8 +177,8 @@ static float cachedDevicePixelsPerInch;
 		NSAssert(FALSE, @"Not supported yet: you are using an iPad that didn't exist when this code was written, we have no idea what the pixel count per inch is!");
 		return 264.0f;
 	}
-	
-	if( [platform hasPrefix:@"x86_64"])
+
+	if[( [platform hasPrefix:@"x86_64"] || [platform hasPrefix:@"arm"])
 	{
 		DDLogCWarn(@"[%@] WARNING: you are running on the simulator; it's impossible for us to calculate centimeter/millimeter/inches units correctly", [self class]);
 		return 132.0f; // Simulator, running on desktop machine
